@@ -1,0 +1,23 @@
+.bottom {
+  height: 150px;
+  background-color: #351c0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn {
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.footer {
+  color: white;
+  font-size: xx-small;
+  justify-items: center;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background-color: black;
+}

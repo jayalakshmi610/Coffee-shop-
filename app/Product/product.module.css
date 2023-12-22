@@ -1,0 +1,29 @@
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+  padding: 80px 50px;
+}
+.product {
+  height: 500px;
+
+  border-radius: 64px 0px 0px 64px;
+  margin: 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+}
+.details {
+  padding: 0px 50px;
+}
+.btnarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}

@@ -1,0 +1,25 @@
+:root {
+  --color1: #522845;
+  --color2: #773455;
+  --color3: #aa4a68;
+  --color4: #f07082;
+  --color5: #694e43;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  height: 46px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  transition: 300ms ease-in-out;
+  padding: 0px 30px;
+}
+button:hover {
+  background-color: bisque;
+}
