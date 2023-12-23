@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./productlist.module.css";
+import styles from "./people.module.css";
 import Image from "next/image";
 import UsernamesWithId from "./users";
 

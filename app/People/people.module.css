@@ -42,3 +42,8 @@
   height: 176px;
   margin: 10px;
 }
+@media (max-width: 768px) {
+  .items {
+    grid-template-columns: auto;
+  }
+}
