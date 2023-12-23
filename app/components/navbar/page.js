@@ -66,7 +66,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`${!sidebar ? styles.sidebar : styles.open}`}>
-          <button onClick={Togglesidebar}> X </button>
+          <button className={styles.closebtn} onClick={Togglesidebar}>
+            X
+          </button>
           <ul>
             <Link href={"/Product"}>
               <li>Product</li>

@@ -77,8 +77,8 @@
 .open {
   width: 250px;
   height: 100vh;
-  background-color: rgb(31, 236, 17);
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration: none;
   position: absolute;
   right: 0;
@@ -89,7 +89,38 @@
   justify-content: center;
   padding: 50px;
   transition: 900ms ease-in-out;
+  margin-bottom: 50px;
 }
+.open ul {
+  width: 100%;
+  padding: space-around;
+  margin: 10px;
+  font-size: x-large;
+  text-decoration: none;
+  font-style: none;
+  color: white;
+}
+.open li {
+  margin-bottom: 50px;
+  display: block;
+  text-decoration: none;
+
+  color: white;
+}
+.open li:hover {
+  background-color: white;
+}
+
+.open .closebtn {
+  position: absolute;
+  top: 0;
+
+  font-size: 16px;
+  margin-right: 49%;
+  background-color: white;
+  color: black;
+}
+
 .mobilenavbar {
   display: none;
   justify-content: space-between;
@@ -102,7 +133,17 @@
   padding: 0px 20px;
   transition: 900ms ease-in-out;
 }
-
+@keyframes rowAnimation {
+  0% {
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  }
+}
+.open:hover {
+  animation: rowAnimation 1s forwards;
+}
 @media (max-width: 768px) {
   .mobilenavbar {
     display: flex;
