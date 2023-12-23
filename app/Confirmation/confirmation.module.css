@@ -58,3 +58,22 @@
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .box {
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  .table {
+    margin: 5px;
+  }
+
+  .payment {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .payment h3 {
+    font-size: medium;
+  }
+}
