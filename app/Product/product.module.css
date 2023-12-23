@@ -7,6 +7,7 @@
     height: auto;
     border-radius: 0; /* Removed border-radius for smaller screens */
     margin: 20px 0;
+    overflow-x: hidden;
   }
 
   .details {
