@@ -54,8 +54,8 @@
   cursor: pointer;
 }
 .hamburger:hover {
-  background-color: white;
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 .sidebar {
@@ -78,43 +78,42 @@
   width: 250px;
   height: 100vh;
   background-color: black;
-  color: white;
+  color: #fff;
+  overflow-x: hidden;
   text-decoration: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  padding: 50px;
   transition: 900ms ease-in-out;
   margin-bottom: 50px;
+  background-position-x: right;
 }
 .open ul {
   width: 100%;
-  padding: space-around;
-  margin: 10px;
-  font-size: x-large;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
   text-decoration: none;
   font-style: none;
-  color: white;
 }
 .open li {
-  margin-bottom: 50px;
-  display: block;
+  padding: 10px;
+  cursor: pointer;
   text-decoration: none;
-
-  color: white;
+  font-size: larger;
 }
 .open li:hover {
-  background-color: white;
+  background-color: #555;
+  transition: 900ms;
+  color: white;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+/* Animation styles */
+.hamburger:hover .open {
+  width: 60px;
 }
 
 .open .closebtn {
   position: absolute;
   top: 0;
-
   font-size: 16px;
   margin-right: 49%;
   background-color: white;
@@ -133,17 +132,7 @@
   padding: 0px 20px;
   transition: 900ms ease-in-out;
 }
-@keyframes rowAnimation {
-  0% {
-    background-color: rgba(255, 255, 255, 0); /* Transparent */
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-  }
-}
-.open:hover {
-  animation: rowAnimation 1s forwards;
-}
+
 @media (max-width: 768px) {
   .mobilenavbar {
     display: flex;

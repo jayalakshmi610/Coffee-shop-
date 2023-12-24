@@ -59,6 +59,9 @@
   justify-content: space-around;
 }
 @media (max-width: 768px) {
+  .listbox {
+    flex-direction: column;
+  }
   .box {
     margin: 10px;
     flex-direction: column;
